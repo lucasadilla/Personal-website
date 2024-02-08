@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <title>BITPASS</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         footer nav ul {
             list-style-type: none;
@@ -21,14 +22,19 @@
     </style>
 </head>
 <body>
-<footer>
-    <nav>
-        <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-        </ul>
-    </nav>
+<footer id="footer">
+    <!-- Footer content will be loaded dynamically -->
 </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            })
+            .catch(error => console.error("Error fetching footer:", error));
+    });
+</script>
 </body>
 </html>
