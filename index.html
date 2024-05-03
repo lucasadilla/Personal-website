@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<header>
+    <h1>Lucas Pentland-Hyde</h1>
+</header>
+
+<subheader id="subheader">
+</subheader>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => console.error("Error fetching header:", error));
+    });
+</script>
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +28,6 @@
 
 <body>
 
-<header>
-    <h1>Lucas Pentland-Hyde</h1>
-</header>
 
     <h3 style="text-align: center; color: #d5aee1;">Based in Montreal</h3>
     <h3 style="text-align: center; color: #d5aee1;">Computer science student</h3>
@@ -20,8 +35,15 @@
 <section>
     <h2 s>Projects</h2>
     <ul>
-        <li> <a href="#" style="color: #fff8a9;">BITPASS</a></li>
-        <li> <a href="#" style="color: #fff8a9;">DEBATE</a></li>
+        <li>
+            <a href="http://localhost:63342/Personal-website/bitpass.html" style="color: #fff8a9;">
+            <button>BITPASS</button>
+            </a>
+        </li>
+        <li>
+            <a href="http://localhost:63342/Personal-website/debate.html" style="color: #fff8a9;">
+                <button>DEBATE</button>
+            </a>
     </ul>
 </section>
 
