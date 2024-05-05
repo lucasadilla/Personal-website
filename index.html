@@ -1,65 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<header>
-    <h1>Lucas Pentland-Hyde</h1>
-</header>
-
-<subheader id="subheader">
-</subheader>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        fetch("header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("header").innerHTML = data;
-            })
-            .catch(error => console.error("Error fetching header:", error));
-    });
-</script>
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Pentland-Hyde</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @keyframes typewriter {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        #typewriter {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0;
+            animation: typewriter 4s steps(30, end) 1s forwards;
+            border-right: 3px solid #fff;
+        }
+
+        header a {
+            font-size: 70px;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <body>
 
+<header>
+    <a href="index.html" class="home-button"><span id="typewriter">Lucas Pentland-Hyde</span></a>
+</header>
 
-    <h3 style="text-align: center; color: #d5aee1;">Based in Montreal</h3>
-    <h3 style="text-align: center; color: #d5aee1;">Computer science student</h3>
 
-<section>
-    <h2 s>Projects</h2>
-    <ul>
-        <li>
-            <a href="http://localhost:63342/Personal-website/bitpass.html" style="color: #fff8a9;">
-            <button>BITPASS</button>
-            </a>
-        </li>
-        <li>
-            <a href="http://localhost:63342/Personal-website/debate.html" style="color: #fff8a9;">
-                <button>DEBATE</button>
-            </a>
-    </ul>
-</section>
+    <h3><span id="typewriter">Based in Montreal</span></h3>
+    <h3><span id="typewriter">Computer science student</span></h3>
 
-<footer id="footer">
-</footer>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer").innerHTML = data;
-            })
-            .catch(error => console.error("Error fetching footer:", error));
-    });
-</script>
+<ul>
+    <li>
+        <a href="bitpass.html" class="home-button">BITPASS</a>
+    </li>
+    <li>
+        <a href="debate.html" class="home-button">DEBATE</a>
+</ul>
 
 </body>
 
