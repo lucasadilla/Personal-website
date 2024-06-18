@@ -6,49 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Pentland-Hyde</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        @keyframes typewriter {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-
-        #typewriter {
-            display: inline-block;
-            overflow: hidden;
-            white-space: nowrap;
-            width: 0;
-            animation: typewriter 4s steps(30, end) 1s forwards;
-            border-right: 3px solid #fff;
-        }
-
-        header a {
-            font-size: 70px;
-            align-items: center;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-        }
-    </style>
 </head>
 
 <body>
 
 <header>
-    <a href="index.html" class="home-button"><span id="typewriter">Lucas Pentland-Hyde</span></a>
+    <a href="index.html" class="home-button"><span class="typewriter">Lucas Pentland-Hyde</span></a>
+    <div class="subheader">
+        <h3>Based in Montreal · Computer science student</h3>
+    </div>
+    <ul id="list">
+        <li>
+            <a href="bitpass.html" class="home-button small-button">BITPASS</a>
+        </li>
+        <li>
+            <a href="debate.html" class="home-button small-button">DEBATR</a>
+        </li>
+    </ul>
 </header>
 
-
-    <h3><span id="typewriter">Based in Montreal</span></h3>
-    <h3><span id="typewriter">Computer science student</span></h3>
-
-<ul>
-    <li>
-        <a href="bitpass.html" class="home-button">BITPASS</a>
-    </li>
-    <li>
-        <a href="debate.html" class="home-button">DEBATE</a>
-</ul>
-
+<script src="index.js"></script>
 </body>
 
 </html>
