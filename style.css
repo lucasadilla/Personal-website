@@ -100,7 +100,7 @@ ul {
 }
 
 ul li {
-    margin: 5px 199px; /* Increase margin to add more space between buttons */
+    margin: 5px 49px; /* Increase margin to add more space between buttons */
     padding: 5px; /* Adjust padding to make buttons smaller */
     border-radius: 3px;
     cursor: pointer;
