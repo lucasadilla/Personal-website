@@ -13,22 +13,42 @@
     </header>
 <section>
     <h2 >BITPASS</h2>
-    <h3 >Password generation and analysis tool</h3>
-    <a href="https://github.com/lucasadilla/BITPASS" class="home-button">GitHub Repository</a>
+    <div class="subheader">
+        <h3 >Password generation and analysis tool</h3>
+    </div>
 </section>
 
 <section>
-    <h2>Features</h2>
-    <h3>Create passwords with different levels of complexity, including varying lengths and character sets.</h3>
+    <img src="images/BITPASS.png" alt="bitpass" class="feature-image">
+    <img src="images/bitpass3.png" alt="bitpass" class="feature-image">
     <h3>Evaluate the strength and security of passwords against brute force attacks.</h3>
+    <img src="images/bitpass2.png" alt="bitpass" class="feature-image">
+    <img src="images/bitpass4.png" alt="bitpass" class="feature-image">
+    <h3>Generate passwords with different levels of complexity, including varying lengths and character sets.</h3>
     <h3>Explore the factors that contribute to password strength and security as you utilize our tool.</h3>
 </section>
 
 <section>
+    <a href="https://github.com/lucasadilla/BITPASS" class="home-button">GitHub Repository</a>
     <h2>Technologies Utilized</h2>
     <h3>Electron · React · Javascript · Tailwind CSS · HTML</h3>
 </section>
+    <div id="footer-placeholder"></div>
 
+    <script>
+        // Function to load the footer content
+        function loadFooter() {
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        }
+
+        // Load the footer when the page is loaded
+        window.onload = loadFooter;
+    </script>
 
 </body>
 </html>

@@ -14,18 +14,36 @@
 
 <section>
     <h2 >Personal Website</h2>
-    <h3 >To showcase my past work</h3>
+    <div class="subheader">
+        <h3 >To showcase my past work</h3>
+    </div>
+
+</section>
+
+<section>
+    <h3 >Tried animation using css and javascript on the website.</h3>
+</section>
+
+<section>
     <a href="https://github.com/lucasadilla/Personal-website" class="home-button">GitHub Repository</a>
-</section>
-
-<section>
-    <h2 >Features</h2>
-</section>
-
-<section>
     <h2 >Technologies Utilized</h2>
     <h3 >Javascript · CSS · HTML</h3>
 </section>
+<div id="footer-placeholder"></div>
 
+<script>
+    // Function to load the footer content
+    function loadFooter() {
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    }
+
+    // Load the footer when the page is loaded
+    window.onload = loadFooter;
+</script>
 </body>
 </html>

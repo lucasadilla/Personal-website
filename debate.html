@@ -8,24 +8,43 @@
 </head>
 <body>
 
-    <header>
-        <a href="index.html" class="home-button">Lucas Pentland-Hyde</a>
-    </header>
+<header>
+    <a href="index.html" class="home-button">Lucas Pentland-Hyde</a>
+</header>
 
 <section>
-    <h2 >DEBATR</h2>
-    <h3 >The game of instigating, debating, and deliberating!</h3>
+    <h2>BICKER</h2>
+    <div class="subheader">
+        <h3>The game of instigating, debating, and deliberating!</h3>
+    </div>
+</section>
+
+<section>
+    <img src="images/Capture4.JPG" alt="debate" class="feature-image">
+    <img src="images/Capture3.JPG" alt="instigate" class="feature-image">
+    <img src="images/Capture2.JPG" alt="deliberate" class="feature-image">
+</section>
+
+<section>
     <a href="https://github.com/lucasadilla" class="home-button">GitHub Repository</a>
+    <h2>Technologies Utilized</h2>
+    <h3>Electron · React · Javascript · Tailwind CSS · HTML</h3>
 </section>
+<div id="footer-placeholder"></div>
 
-<section>
-    <h2 >Features</h2>
-</section>
+<script>
+    // Function to load the footer content
+    function loadFooter() {
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    }
 
-<section>
-    <h2 >Technologies Utilized</h2>
-    <h3 >Electron · React · Javascript · Tailwind CSS · HTML</h3>
-</section>
-
+    // Load the footer when the page is loaded
+    window.onload = loadFooter;
+</script>
 </body>
 </html>

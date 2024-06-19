@@ -126,3 +126,47 @@ ul li {
     background-color: #fff;
     color: #333;
 }
+
+/* New styles for images */
+img.logo {
+    max-width: 200px;
+    height: auto;
+    margin-top: 20px;
+}
+
+img.feature-image, img.technology-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* New styles for footer */
+footer {
+    background-color: #2a2a2a;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-link:hover {
+    background-color: white;
+    color: #333;
+}
