@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEBATE</title>
+    <title>BICKER</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/lib/vanilla-tilt.min.js"></script>
 </head>
 <body>
 
@@ -15,14 +16,23 @@
 <section>
     <h2>BICKER</h2>
     <div class="subheader">
-        <h3>The game of instigating, debating, and deliberating!</h3>
+        <h4>The game of instigating, debating, and deliberating!</h4>
     </div>
 </section>
 
 <section>
-    <img src="images/Capture4.JPG" alt="debate" class="feature-image">
-    <img src="images/Capture3.JPG" alt="instigate" class="feature-image">
-    <img src="images/Capture2.JPG" alt="deliberate" class="feature-image">
+    <div class="tilt" data-tilt data-tilt-glare data-tilt-max-glare="0.3" data-tilt-max="10" data-tilt-speed="750" data-tilt-perspective="1000" data-tilt-scale="1.05">
+        <img src="images/Capture4.JPG" alt="debate" class="feature-image">
+    </div>
+    <h4>Start off by writing down a controversial opinion of yours in under 200 characters.</h4>
+    <div class="tilt" data-tilt data-tilt-glare data-tilt-max-glare="0.3" data-tilt-max="10" data-tilt-speed="750" data-tilt-perspective="1000" data-tilt-scale="1.05">
+        <img src="images/Capture3.JPG" alt="instigate" class="feature-image">
+    </div>
+    <h4>Find an opinion you disagree with and respond in under 200 characters.</h4>
+    <div class="tilt" data-tilt data-tilt-glare data-tilt-max-glare="0.3" data-tilt-max="10" data-tilt-speed="750" data-tilt-perspective="1000" data-tilt-scale="1.05">
+        <img src="images/Capture2.JPG" alt="deliberate" class="feature-image">
+    </div>
+    <h4>Vote on other's disagreements.</h4>
 </section>
 
 <section>
@@ -45,6 +55,17 @@
 
     // Load the footer when the page is loaded
     window.onload = loadFooter;
+
+    // Initialize tilt.js
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+        max: 10,
+        speed: 750,
+        glare: false,
+        "max-glare": 0.3,
+        scale: 1.1,
+        perspective: 1000,
+        gyroscope: true
+    });
 </script>
 <script src="cursor.js"></script>
 <script src="index.js"></script>

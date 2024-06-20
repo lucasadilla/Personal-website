@@ -10,3 +10,4 @@ document.addEventListener('DOMContentLoaded', () => {
         cursor.style.transform = `translate3d(${e.clientX - cursor.offsetWidth / 2}px, ${e.clientY - cursor.offsetHeight / 2}px, 0)`;
     });
 });
+

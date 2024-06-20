@@ -35,10 +35,10 @@ header a {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #000000, #2a2a2a);
+    background: linear-gradient(135deg, #000000, #1c1c1c);
     background-attachment: fixed;
     min-height: 100vh;
     display: flex;
@@ -81,6 +81,12 @@ h3 {
     color: #ffffff;
     font-size: 15px;
     margin: 3px auto; /* Adjusted margin */
+}
+
+h4 {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 10px auto; /* Adjusted margin */
 }
 
 h1 {
@@ -193,5 +199,25 @@ footer {
     height: 100%;
     border-radius: 50%;
     backdrop-filter: invert(1); /* Apply inversion effect */
+}
+
+.tilt {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    will-change: transform;
+    transition: transform 0.3s ease;
+}
+
+.tilt:hover {
+    transform: scale(1.05);
+}
+
+img.feature-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 

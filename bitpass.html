@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BITPASS</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/lib/vanilla-tilt.min.js"></script>
 </head>
 <body>
 
@@ -14,19 +15,28 @@
 <section>
     <h2 >BITPASS</h2>
     <div class="subheader">
-        <h3 >Password generation and analysis tool</h3>
+        <h4 >Password generation and analysis tool</h4>
     </div>
 </section>
 
-<section>
-    <img src="images/BITPASS.png" alt="bitpass" class="feature-image">
-    <img src="images/bitpass3.png" alt="bitpass" class="feature-image">
-    <h3>Evaluate the strength and security of passwords against brute force attacks.</h3>
-    <img src="images/bitpass2.png" alt="bitpass" class="feature-image">
-    <img src="images/bitpass4.png" alt="bitpass" class="feature-image">
-    <h3>Generate passwords with different levels of complexity, including varying lengths and character sets.</h3>
-    <h3>Explore the factors that contribute to password strength and security as you utilize our tool.</h3>
-</section>
+    <section>
+        <div class="tilt" data-tilt data-tilt-glare data-tilt-max-glare="0.3" data-tilt-max="10" data-tilt-speed="750" data-tilt-perspective="1000" data-tilt-scale="1.05">
+            <img src="images/BITPASS.png" alt="debate" class="feature-image">
+        </div>
+        <div class="tilt" data-tilt data-tilt-glare data-tilt-max-glare="0.3" data-tilt-max="10" data-tilt-speed="750" data-tilt-perspective="1000" data-tilt-scale="1.05">
+            <img src="images/bitpass3.png" alt="instigate" class="feature-image">
+        </div>
+        <h4>Evaluate the strength and security of passwords against brute force attacks.</h4>
+        <div class="tilt" data-tilt data-tilt-glare data-tilt-max-glare="0.3" data-tilt-max="10" data-tilt-speed="750" data-tilt-perspective="1000" data-tilt-scale="1.05">
+            <img src="images/bitpass2.png" alt="deliberate" class="feature-image">
+        </div>
+        <h4>Generate passwords with different levels of complexity, including varying lengths and character sets.</h4>
+        <div class="tilt" data-tilt data-tilt-glare data-tilt-max-glare="0.3" data-tilt-max="10" data-tilt-speed="750" data-tilt-perspective="1000" data-tilt-scale="1.05">
+            <img src="images/bitpass4.png" alt="deliberate" class="feature-image">
+        </div>
+        <h4>Explore the factors that contribute to password strength and security as you utilize our tool.</h4>
+    </section>
+
 
 <section>
     <a href="https://github.com/lucasadilla/BITPASS" class="home-button">GitHub Repository</a>
@@ -48,9 +58,20 @@
 
         // Load the footer when the page is loaded
         window.onload = loadFooter;
+
+        VanillaTilt.init(document.querySelectorAll(".tilt"), {
+            max: 10,
+            speed: 750,
+            glare: false,
+            "max-glare": 0.3,
+            scale: 1.1,
+            perspective: 1000,
+            gyroscope: true
+        });
     </script>
     <script src="cursor.js"></script>
     <script src="index.js"></script>
+
 
 </body>
 </html>
